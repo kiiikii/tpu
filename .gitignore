@@ -1,5 +1,3 @@
-/vendor
-/.idea
-/.vagrant
-env.php
-composer.lock
+admin/vendor
+admin/env.php
+admin/composer.lock
