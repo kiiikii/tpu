@@ -9,4 +9,4 @@
 		$ses::init();
 	}   
 	
-	$ses::setPrefix('_skripsuit');
+	$ses::setPrefix('tpu');
