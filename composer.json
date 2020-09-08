@@ -1,9 +1,7 @@
 {
     "name": "kiki/skripsuit",
     "require": {
-        "joshcam/mysqli-database-class": "*",
-        "josantonius/session": "^1.1",
-        "verot/class.upload.php": "dev-master"
+        "joshcam/mysqli-database-class": "*"
     },
     "license": "tidak ada",
     "authors": [
