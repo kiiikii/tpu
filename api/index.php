@@ -19,15 +19,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<?php include '_layout/head.php' ?>
+	<?php include '../_layout/head.php' ?>
 	<body>
-		<?php include '_layout/nav.php' ?>
+		<?php include '../_layout/nav.php' ?>
 		<?php 
 			echo $halaman;
-			include '_layout/footer.php'
+			include '../_layout/footer.php'
 		?>
-		<?php include '_layout/loader.php' ?>
-		<?php include '_layout/javascript.php' ?>
+		<?php include '../_layout/loader.php' ?>
+		<?php include '../_layout/javascript.php' ?>
 	</body>
 </html>
 
