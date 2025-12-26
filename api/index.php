@@ -1,6 +1,6 @@
 <?php 
 	
-	include (__DIR__ . '/_loader.php');
+	include (__DIR__ . '../_loader.php');
 	if (isset($_GET['halaman'])) {
 		$halaman = $_GET['halaman'];
 	} else {
