@@ -7,9 +7,11 @@
 		$halaman = 'beranda';
 	}
 	ob_start();
-	$file = __DIR__ . '../_page/'.$halaman.'.php';
+    // Path corrected here (Added a slash)
+	$file = __DIR__ . '/../_page/'.$halaman.'.php';
 	if (!file_exists($file)) {
-		include (__DIR__ . '/_page/404.php');
+        // Path corrected here (Added the required '../')
+		include (__DIR__ . '/../_page/404.php');
 	} else {
 		include $file;
 	}
@@ -19,20 +21,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<?php include (__DIR__ . '/_layout/head.php') ?>
+    <!-- Path corrected here -->
+	<?php include (__DIR__ . '/../_layout/head.php') ?>
 	<body>
-		<?php include (__DIR__ . '/_layout/nav.php') ?>
+        <!-- Path corrected here -->
+		<?php include (__DIR__ . '/../_layout/nav.php') ?>
 		<?php 
 			echo $halaman;
-			include (__DIR__ . '/_layout/footer.php')
+            // Path corrected here
+			include (__DIR__ . '/../_layout/footer.php')
 		?>
-		<?php include (__DIR__ . '/_layout/loader.php') ?>
-		<?php include (__DIR__ . '/_layout/javascript.php') ?>
+        <!-- Path corrected here -->
+		<?php include (__DIR__ . '/../_layout/loader.php') ?>
+        <!-- Path corrected here -->
+		<?php include (__DIR__ . '/../_layout/javascript.php') ?>
 	</body>
 </html>
 
 <?php 
 	if (isset($jsfile)) {
-		include (__DIR__ . '/_page/js/'.$jsfile.'.php');
+        // Path corrected here
+		include (__DIR__ . '/../_page/js/'.$jsfile.'.php');
 	}
 ?>
