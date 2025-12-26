@@ -1,15 +1,15 @@
 <?php 
 	
-	include '_loader.php';
+	include '../_loader.php';
 	if (isset($_GET['halaman'])) {
 		$halaman = $_GET['halaman'];
 	} else {
 		$halaman = 'beranda';
 	}
 	ob_start();
-	$file = '_page/'.$halaman.'.php';
+	$file = '../_page/'.$halaman.'.php';
 	if (!file_exists($file)) {
-		include '_page/404.php';
+		include '../_page/404.php';
 	} else {
 		include $file;
 	}
@@ -33,6 +33,6 @@
 
 <?php 
 	if (isset($jsfile)) {
-		include '_page/js/'.$jsfile.'.php';
+		include '../_page/js/'.$jsfile.'.php';
 	}
 ?>
